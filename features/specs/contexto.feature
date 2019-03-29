@@ -1,5 +1,6 @@
 #language: pt
 
+@contexto
 Funcionalidade: Trabalhar com contexto
 
 Contexto:
