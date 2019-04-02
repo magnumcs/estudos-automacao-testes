@@ -8,5 +8,10 @@ After do
 end
 
 Before '@comeco' do
-    puts "rodei apenas no cenário com tag começo.""
+    puts "rodei apenas no cenário com tag começo."
 end
+
+After '@final' do
+    puts "rodei apenas no cenário com tag final."
+end
+
