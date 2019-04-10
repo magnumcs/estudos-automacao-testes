@@ -17,5 +17,5 @@ end
   
 Então("verifico se fui cadastrado") do
     texto = find('#notice')
-    expect(texto.text).to eql 'Usuário Criado com sucesso'
+    expect(texto.text).to eq 'Usuário Criado com sucesso'
 end
