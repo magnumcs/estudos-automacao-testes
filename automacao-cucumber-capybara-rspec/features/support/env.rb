@@ -1,5 +1,10 @@
-require 'capybara/cucumber'
-require 'selenium-webdriver'
+require 'capybara'
+require 'capybara/dsl'
+require 'capybara/rspec/matchers'
+require 'site_prism'
+
+World(Capybara::DSL)
+World(Capybara::RSpecMatchers)
 
 Capybara.configure do |config|
     #selenium/selenium_chrome/selenium_chrome_healess
