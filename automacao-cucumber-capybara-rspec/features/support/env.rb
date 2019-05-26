@@ -3,6 +3,7 @@ require 'capybara/dsl'
 require 'capybara/rspec/matchers'
 require 'site_prism'
 require "selenium-webdriver"
+require_relative 'helper.rb'
 
 World(Capybara::DSL)
 World(Capybara::RSpecMatchers)
@@ -12,6 +13,8 @@ BROWSER = ENV['BROWSER']
 AMBIENTE = ENV['AMBIENTE']
 
 CONFIG = YAML.load_file(File.dirname(__FILE__ ) + "/ambientes/#{AMBIENTE}.yml")
+
+World(Helper)
 
 
 Capybara.register_driver :selenium do |app|
