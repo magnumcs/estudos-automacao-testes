@@ -6,3 +6,7 @@ pretty: --format pretty
 progress: --format progress
 homolog:  AMBIENTE=homolog
 producao:  AMBIENTE=producao
+
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+internet-explorer: BROWSER=internet_explorer
