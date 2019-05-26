@@ -8,5 +8,7 @@ homolog:  AMBIENTE=homolog
 producao:  AMBIENTE=producao
 
 chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
 firefox: BROWSER=firefox
+firefox_headless: BROWSER=firefox_headless
 internet-explorer: BROWSER=internet_explorer
